@@ -39,19 +39,19 @@ La balise `<a>` est utilisée pour créer des liens hypertextes vers d'autres pa
 
 ## Les images et les médias
 
-### L'ajout d'images : `<img>` et attributs src, alt
+- L'ajout d'images : `<img>` et attributs src, alt
 
-### Les vidéos et l'audio : `<video>`, `<audio>` et attributs associés
+- Les vidéos et l'audio : `<video>`, `<audio>` et attributs associés
 
 ## Les formulaires
 
-### La création de formulaires : `<form>`
+- La création de formulaires : `<form>`
 
-### Les champs de saisie : `<input>`
+-  Les champs de saisie : `<input>`
 
-### Les menus déroulants : `<select>` et `<option>`
+- Les menus déroulants : `<select>` et `<option>`
 
-### Les boutons : `<button>`
+-  Les boutons : `<button>`
 
 ## Les balises sémantiques
 

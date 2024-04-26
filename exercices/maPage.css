@@ -1,0 +1,37 @@
+nav{
+background-color: blue;
+text-align: center;
+margin: 0;
+padding: o;
+color: white;
+
+}
+
+ul{
+    list-style-type: circle;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+h2{
+    color:blue;
+    text-align: center;
+}
+
+.content{
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 10px solid blueviolet; 
+    padding: 20px; /* Espacement intérieur de 20 pixels */
+    width: 80%; /* Largeur du cadre */
+    margin: 0 auto; /* Centre le cadre horizontalement */
+}
