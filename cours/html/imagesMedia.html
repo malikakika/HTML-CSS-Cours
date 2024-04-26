@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de médias HTML</title>
+</head>
+<body>
+    <h2>Ajout d'images</h2>
+    <!-- Ajout d'une image avec la balise <img> et les attributs src et alt -->
+    <img src="exemple.jpg" alt="Exemple d'image">
+    <img src="../assets/image.jpeg" alt="malika">
+    
+    <h2>Vidéo</h2>
+    <!-- Ajout d'une vidéo avec la balise <video> et les attributs src et controls -->
+    <video src="exemple.mp4" controls width="400" height="300">
+        <!-- Message de secours en cas de non support de la vidéo -->
+        Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+    </video>
+    <!-- Pour intégrer une vidéo YouTube dans votre page web -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/daZiwr3oFA4?si=rCi46z4CTZDCwy06" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <h2>Audio</h2>
+    <!-- Ajout d'un fichier audio avec la balise <audio> et les attributs src et controls -->
+    <audio src="exemple.mp3" controls>
+        <!-- Message de secours en cas de non support de l'audio -->
+        Votre navigateur ne prend pas en charge la lecture de cet audio.
+    </audio>
+</body>
+</html>

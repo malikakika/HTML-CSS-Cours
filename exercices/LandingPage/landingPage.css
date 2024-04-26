@@ -1,0 +1,40 @@
+body {
+    display: block;
+    margin: 0;
+}
+
+h1  {
+text-align: center;}
+
+
+.homeparagraphe {
+    margin-left: 3rem;
+    width: 20%;
+}
+
+
+.aboutsection {
+    overflow: hidden; /* Pour gérer les floats */
+  }
+  
+  .left-content {
+    float: left;
+    width: 50%;
+  }
+  
+  .right-content {
+    float: right;
+    width: 50%;
+  }
+  
+  .second-row {
+    clear: both; /* Pour éviter que le contenu de la deuxième ligne ne flotte vers le haut */
+  }
+  
+
+  .aboutparagraphe{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

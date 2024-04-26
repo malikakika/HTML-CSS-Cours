@@ -1,0 +1,35 @@
+.tiret {
+    list-style-type: disc;
+}
+
+.chiffre-romain {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    font-weight: bold;
+}
+
+
+
+
+
+.balle-pleine {
+    color: blue;
+    font-weight: bold;
+}
+
+.balle-creuse {
+    list-style-type: circle;
+    color: green;
+    font-style: italic;
+}
+
+.carre {
+    list-style-type: square;
+    color: red;
+    text-decoration: underline;
+}
+
+body{
+  margin: 5rem;
+}
+

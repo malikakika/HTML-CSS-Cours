@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de listes HTML</title>
+
+    <link rel="stylesheet" href="extrenal.css">
+</head>
+<body>
+    <h2>Liste non ordonnée (ul)</h2>
+    <ul>
+        <li>Élément 1</li>
+        <li>Élément 2</li>
+        <li>Élément 3</li>
+    </ul>
+    
+    <h2>Liste ordonnée (ol)</h2>
+    <ol>
+        <li>Élément 1</li>
+        <li>Élément 2</li>
+        <li>Élément 3</li>
+    </ol>
+    
+    <h2>Liste mixte</h2>
+    <ul class="tiret">
+        <li>Élément 1 (ul)</li>
+        <li>Élément 2 (ul)</li>
+        <li>Élément 3 (ul)
+            <ol class="chiffre-romain">
+                <li>Sous-élément 1 (ol)</li>
+                <li>Sous-élément 2 (ol)</li>
+                <li>Sous-élément 3 (ol)</li>
+            </ol>
+        </li>
+        <li>Élément 4 (ul)</li>
+    </ul>
+    
+    <h2>Liste avec type de marqueurs personnalisé</h2>
+    <ul>
+        <li class="balle-pleine">Balle pleine (défaut)</li>
+        <li class="balle-creuse">Balle creuse (disc)</li>
+        <li class="carre">Carré (square)</li>
+    </ul>
+    
+    <h2>Liste avec attribut start</h2>
+    <ol start="5">
+        <li>Élément 5</li>
+        <li>Élément 6</li>
+        <li>Élément 7</li>
+    </ol>
+    
+    <h2>Liste avec attribut reversed</h2>
+    <ol reversed>
+        <li>Élément 3</li>
+        <li>Élément 2</li>
+        <li>Élément 1</li>
+    </ol>
+</body>
+</html>

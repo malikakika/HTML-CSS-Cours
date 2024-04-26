@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de médias HTML avec CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 7px solid #ccc;
+            padding-bottom: 5px;
+        }
+        img, video, audio, iframe {
+            margin-bottom: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Images</h2>
+    <!-- Ajout d'une image avec la balise <img> et les attributs src et alt -->
+    <img src="../../assets/image.jpeg" alt="malika">
+    
+    <h2>Vidéo</h2>
+    <!-- Ajout d'une vidéo avec la balise <video> et les attributs src et controls -->
+    <video src="exemple.mp4" controls width="400" height="300">
+        <!-- Message de secours en cas de non support de la vidéo -->
+        Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+    </video>
+    <!-- Pour intégrer une vidéo YouTube dans votre page web -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/daZiwr3oFA4?si=rCi46z4CTZDCwy06" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <h2>Audio</h2>
+ 
+</body>
+</html>
