@@ -146,4 +146,56 @@ Les styles externes sont définis dans des fichiers CSS distincts, puis liés au
 - Nécessite un fichier CSS externe supplémentaire.
 - Peut entraîner un léger délai de chargement initial supplémentaire.
 
+## Sélecteurs de classe, d'identifiant et de balise HTML
 
+Dans les feuilles de style CSS, vous pouvez utiliser différents types de sélecteurs pour cibler spécifiquement les éléments HTML que vous souhaitez styliser. Voici trois types de sélecteurs couramment utilisés :
+
+### Sélecteurs de classe
+
+Les sélecteurs de classe vous permettent de cibler des éléments HTML qui possèdent une classe spécifique. Pour ce faire, utilisez un point suivi du nom de la classe dans votre fichier CSS. Par exemple :
+
+```css
+.ma-classe {
+    /* Styles à appliquer */
+}
+```
+### Sélecteurs de balise HTML 
+
+Les sélecteurs de balise HTML vous permettent de cibler tous les éléments d'un type particulier. Utilisez simplement le nom de la balise HTML dans votre fichier CSS. Par exemple :
+
+```css
+p {
+    /* Styles à appliquer */
+}
+```
+En utilisant ces sélecteurs, vous pouvez styliser différents éléments de votre document HTML de manière précise et flexible.
+## Sélecteurs de parent-enfant, descendants, frères et sœurs
+En CSS, vous pouvez également cibler des éléments en fonction de leur relation avec d'autres éléments dans le document HTML. Voici quelques sélecteurs utiles pour cela :
+## Sélecteur d'élément enfant (>)
+Ce sélecteur cible les éléments qui sont des enfants directs d'un élément spécifique. Par exemple, pour cibler uniquement les éléments <li> qui sont des enfants directs d'un élément <ul>, vous pouvez utiliser :
+```css
+ul > li {
+ /* Styles à appliquer */
+}
+```
+## Sélecteur de descendant (espace) 
+Ce sélecteur cible les éléments qui sont des descendants d'un autre élément, qu'ils soient enfants directs, petits-enfants, etc. Par exemple, pour cibler tous les éléments <a> qui sont des descendants d'un élément <div>, vous pouvez utiliser :
+```css
+div a {
+ /* Styles à appliquer */
+}
+```
+## Sélecteur de frères (+) 
+Ce sélecteur cible un élément qui est immédiatement précédé par un autre élément spécifié. Par exemple, pour cibler les paragraphes qui suivent immédiatement des titres <h2>, vous pouvez utiliser :
+```css
+h2 + p {
+ /* Styles à appliquer */
+}
+```
+## Sélecteur de frères général (~) 
+Ce sélecteur cible tous les éléments qui sont des frères d'un autre élément spécifié, qu'ils soient précédés par cet élément ou non. Par exemple, pour cibler tous les éléments <p> qui sont des frères d'un élément <h2>, vous pouvez utiliser :
+```css
+h2 ~ p {
+ /* Styles à appliquer */
+}
+```

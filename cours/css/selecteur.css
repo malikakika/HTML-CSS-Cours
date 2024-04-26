@@ -1,0 +1,37 @@
+.liste {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour les éléments de liste (balise <li>) qui sont enfants directs d'un élément ayant la classe "liste" */
+.liste > li {
+    background-color: #f0f0f0;
+    padding: 5px;
+}
+
+/* Styles pour les éléments ayant la classe "section" */
+.section {
+    margin-top: 20px;
+}
+
+/* Styles pour les paragraphes (balise <p>) qui sont descendants d'un élément ayant la classe "section" */
+.section p {
+    font-style: italic;
+}
+
+/* Styles pour les paragraphes (balise <p>) qui suivent immédiatement un titre de niveau 2 (balise <h2>) */
+h2 + p {
+    color: blue;
+}
+
+/* Styles pour les paragraphes (balise <p>) qui sont des frères d'un titre de niveau 2 (balise <h2>) */
+h2 ~ p {
+    border: 1px solid red;
+}
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
