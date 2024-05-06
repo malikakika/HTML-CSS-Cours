@@ -1,5 +1,5 @@
-# Apprendre HTML & CSS
-
+# Apprendre HTML & CSS & JS
+# HTML
 ## Introduction à HTML
 
 ### Qu'est-ce que HTML ?
@@ -37,13 +37,13 @@ Les balises de titre `<h1>` à `<h6>` sont utilisées pour marquer les différen
 
 La balise `<a>` est utilisée pour créer des liens hypertextes vers d'autres pages web ou des ressources. L'attribut href spécifie l'URL vers laquelle le lien pointe.
 
-## Les images et les médias
+###  Les images et les médias
 
 - L'ajout d'images : `<img>` et attributs src, alt
 
 - Les vidéos et l'audio : `<video>`, `<audio>` et attributs associés
 
-## Les formulaires
+### Les formulaires
 
 - La création de formulaires : `<form>`
 
@@ -53,7 +53,7 @@ La balise `<a>` est utilisée pour créer des liens hypertextes vers d'autres pa
 
 -  Les boutons : `<button>`
 
-## Les balises sémantiques
+### Les balises sémantiques
 
 Les balises sémantiques comme `<header>`, `<footer>`, `<nav>`, `<article>`, et `<section>` sont utilisées pour organiser le contenu d'une page web de manière structurée et significative, ce qui améliore l'accessibilité pour les utilisateurs et facilite la compréhension du contenu par les moteurs de recherche.
 
@@ -67,7 +67,7 @@ Voici une explication de chaque balise :
 
 L'utilisation de ces balises aide non seulement à structurer le contenu de manière logique, mais également à améliorer l'accessibilité pour les utilisateurs qui utilisent des technologies d'assistance, comme les lecteurs d'écran, ainsi que pour les moteurs de recherche qui analysent le contenu de la page.
 
-## Les tableaux
+### Les tableaux
 
 Les tableaux en HTML sont utilisés pour organiser les données tabulaires de manière structurée. Voici un aperçu des balises principales utilisées pour créer des tableaux :
 
@@ -82,7 +82,47 @@ Pour garantir une accessibilité optimale et suivre les bonnes pratiques dans l'
 - Associez les en-têtes de cellules : Utilisez l'attribut `scope="col"` pour les en-têtes de colonne et `scope="row"` pour les en-têtes de ligne. Cela aide les lecteurs d'écran à associer correctement les cellules de données à leurs en-têtes.
 - Utilisez les attributs `headers` et `id` pour lier les cellules de données à leurs en-têtes lorsque cela est nécessaire.
 - Utilisez les légendes `<caption>` pour fournir une description ou un titre au tableau.
+## Tout ce qu'il faut savoir sur les Canvas HTML
 
+### Qu'est-ce qu'un Canvas HTML ?
+
+Un canvas HTML est une zone rectangulaire dans une page HTML où vous pouvez dessiner des graphiques, des animations ou d'autres éléments visuels en utilisant JavaScript. C'est un élément essentiel pour créer des applications Web interactives et graphiquement riches.
+
+### Comment créer un Canvas ?
+
+Pour créer un canvas HTML, vous devez simplement inclure un élément `<canvas>` dans votre code HTML. Voici un exemple :
+
+```html
+<canvas id="myCanvas" width="800" height="600"></canvas>
+```
+
+### Contexte 2D vs Contexte WebGL :
+
+Il existe deux types de contexte pour les Canvas : le contexte 2D et le contexte WebGL.
+
+- Contexte 2D : C'est le contexte le plus couramment utilisé pour dessiner des graphiques 2D. Vous pouvez dessiner des formes, des lignes, des courbes, du texte et des images en utilisant les méthodes disponibles dans le contexte 2D.
+- Contexte WebGL : C'est un contexte basé sur OpenGL qui permet de créer des graphiques 2D et 3D plus avancés, y compris des effets visuels complexes et des animations haute performance. Il est plus complexe à utiliser que le contexte 2D et nécessite une connaissance approfondie de la programmation graphique.
+
+### Propriétés importantes :
+- width et height : Définissent la largeur et la hauteur du canvas en pixels.
+- getContext('2d') : Méthode pour obtenir le contexte 2D du canvas.
+- fillStyle et strokeStyle : Propriétés pour définir la couleur de remplissage et de contour.
+- fillRect(x, y, width, height) : Méthode pour dessiner un rectangle rempli.
+- strokeRect(x, y, width, height) : Méthode pour dessiner le contour d'un rectangle.
+- clearRect(x, y, width, height) : Méthode pour effacer une zone rectangulaire du canvas.
+- drawImage(image, x, y) : Méthode pour dessiner une image sur le canvas.
+- arc(x, y, radius, startAngle, endAngle, anticlockwise) : Méthode pour dessiner un arc ou un cercle.
+- beginPath(), moveTo(), lineTo(), closePath() : Méthodes pour dessiner des chemins (lignes et polygones).
+- fill() et stroke() : Méthodes pour remplir ou dessiner le contour d'un chemin.
+### Animation avec les Canvas :
+Les Canvas peuvent être utilisés pour créer des animations en combinant JavaScript et la fonction requestAnimationFrame(). Cette fonction est utilisée pour créer une boucle de jeu qui rafraîchit le canvas à un taux de trame constant, permettant ainsi de créer des animations fluides.
+
+### Limitations :
+Bien que les Canvas offrent une grande flexibilité pour le rendu graphique dans les navigateurs Web, ils ont quelques limitations :
+
+Les Canvas ne sont pas adaptés pour créer des interfaces utilisateur complexes. Pour cela, vous devriez utiliser HTML et CSS.
+Le contenu des Canvas n'est pas accessible par les moteurs de recherche, donc si votre application dépend fortement du contenu textuel, cela peut poser problème en termes de référencement.
+Les performances peuvent être limitées, surtout si vous essayez de dessiner des graphiques très complexes ou si vous utilisez des animations intensives.
 
 # CSS
 
@@ -169,33 +209,96 @@ p {
 }
 ```
 En utilisant ces sélecteurs, vous pouvez styliser différents éléments de votre document HTML de manière précise et flexible.
-## Sélecteurs de parent-enfant, descendants, frères et sœurs
+#### Sélecteurs de parent-enfant, descendants, frères et sœurs
 En CSS, vous pouvez également cibler des éléments en fonction de leur relation avec d'autres éléments dans le document HTML. Voici quelques sélecteurs utiles pour cela :
-## Sélecteur d'élément enfant (>)
+#### Sélecteur d'élément enfant (>)
 Ce sélecteur cible les éléments qui sont des enfants directs d'un élément spécifique. Par exemple, pour cibler uniquement les éléments <li> qui sont des enfants directs d'un élément <ul>, vous pouvez utiliser :
 ```css
 ul > li {
  /* Styles à appliquer */
 }
 ```
-## Sélecteur de descendant (espace) 
+#### Sélecteur de descendant (espace) 
 Ce sélecteur cible les éléments qui sont des descendants d'un autre élément, qu'ils soient enfants directs, petits-enfants, etc. Par exemple, pour cibler tous les éléments <a> qui sont des descendants d'un élément <div>, vous pouvez utiliser :
 ```css
 div a {
  /* Styles à appliquer */
 }
 ```
-## Sélecteur de frères (+) 
+#### Sélecteur de frères (+) 
 Ce sélecteur cible un élément qui est immédiatement précédé par un autre élément spécifié. Par exemple, pour cibler les paragraphes qui suivent immédiatement des titres <h2>, vous pouvez utiliser :
 ```css
 h2 + p {
  /* Styles à appliquer */
 }
 ```
-## Sélecteur de frères général (~) 
+#### Sélecteur de frères général (~) 
 Ce sélecteur cible tous les éléments qui sont des frères d'un autre élément spécifié, qu'ils soient précédés par cet élément ou non. Par exemple, pour cibler tous les éléments <p> qui sont des frères d'un élément <h2>, vous pouvez utiliser :
 ```css
 h2 ~ p {
  /* Styles à appliquer */
 }
 ```
+
+# JavaScript
+
+## Introduction à JavaScript :
+
+JavaScript est un langage de programmation de haut niveau, interprété par les navigateurs web. Il est principalement utilisé pour rendre les pages web interactives et dynamiques en permettant aux développeurs d'ajouter des fonctionnalités telles que des animations, des calculs, des validations de formulaires, des requêtes AJAX, et bien plus encore.
+
+Le JavaScript est un langage de script côté client, ce qui signifie qu'il est exécuté dans le navigateur web du client, contrairement à d'autres langages de programmation tels que PHP ou Python qui sont exécutés côté serveur.
+
+## Syntaxe de base :
+
+JavaScript utilise une syntaxe similaire à celle de nombreux autres langages de programmation, tels que C, Java et Python. Voici un exemple simple de code JavaScript :
+
+```javascript
+function saluer() {
+    alert("Bonjour !");
+}
+```
+## Variable locale et Variable globale 
+
+En JavaScript, les variables locales et les variables globales sont des concepts fondamentaux qui déterminent la portée et la durée de vie des variables dans un programme. Voici les différences principales entre les deux :
+
+### Variable Locale :
+- Portée : Une variable locale est déclarée à l'intérieur d'une fonction ou d'un bloc de code spécifique, ce qui signifie qu'elle est accessible uniquement à l'intérieur de cette fonction ou de ce bloc.
+Durée de Vie : La durée de vie d'une variable locale est limitée à la fonction ou au bloc dans lequel elle est déclarée. Une fois que la fonction ou le bloc est terminé, la variable locale est détruite et sa mémoire est libérée.
+- Accès : Les variables locales ne sont pas accessibles en dehors de la fonction ou du bloc où elles sont déclarées, ce qui garantit l'encapsulation et évite les conflits de noms avec d'autres parties du code.
+### Variable Globale :
+- Portée : Une variable globale est déclarée à l'extérieur de toute fonction ou bloc de code, ce qui signifie qu'elle est accessible depuis n'importe où dans le script, y compris à l'intérieur des fonctions.
+Durée de Vie : La durée de vie d'une variable globale est étendue à toute la durée d'exécution du programme. Elle reste en mémoire tant que le script est chargé et en cours d'exécution.
+- Accès : Les variables globales peuvent être accédées et modifiées à partir de n'importe quelle partie du code, ce qui les rend pratiques pour stocker des informations partagées entre différentes parties de l'application. Cependant, une utilisation excessive de variables globales peut rendre le code moins lisible et plus difficile à maintenir.
+
+### Exemple 
+```javascript
+// Variable globale
+let globalVariable = "Je suis une variable globale";
+
+function fonctionA() {
+    // Variable locale
+    let localVariable = "Je suis une variable locale";
+
+    console.log("Dans la fonctionA :");
+    console.log(globalVariable); // Accès à la variable globale
+    console.log(localVariable); // Accès à la variable locale
+}
+
+function fonctionB() {
+    console.log("Dans la fonctionB :");
+    console.log(globalVariable); // Accès à la variable globale
+    // console.log(localVariable); // Erreur : localVariable n'est pas définie dans cette portée
+}
+
+// Appels de fonction
+fonctionA();
+fonctionB();
+
+```
+Dans cet exemple :
+
+- globalVariable est une variable globale déclarée à l'extérieur de toutes les fonctions. Elle peut être accédée et modifiée à partir de n'importe quelle partie du script.
+- localVariable est une variable locale déclarée à l'intérieur de la fonction fonctionA(). Elle est accessible uniquement à l'intérieur de cette fonction et n'est pas visible en dehors de celle-ci.
+
+Lorsque vous exécutez le script, la console affichera les valeurs de globalVariable dans les deux fonctions, mais la tentative d'accès à localVariable en dehors de la fonction fonctionA() générera une erreur car elle n'est pas définie dans cette portée.
+
