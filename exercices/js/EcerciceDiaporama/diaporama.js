@@ -33,7 +33,7 @@ window.addEventListener("load", () => {
 
     // Fonction pour démarrer le changement automatique de photo toutes les 2 secondes
     function demarrerChangementAutomatique() {
-        intervalId = setInterval(afficherProchaineImage, 2000);
+        intervalId = setInterval(afficherProchaineImage, 5000);
     }
 
     // Démarrer le changement automatique de photo
@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
     imageDiapo.addEventListener('click', () => {
         // Effacer l'intervalle de changement automatique
         clearInterval(intervalId);
-        // Redémarrer le changement automatique après 2 secondes sans interaction
+        // Redémarrer le changement automatique après 5 secondes sans interaction
         setTimeout(demarrerChangementAutomatique, 5000);
         // Afficher la prochaine image
         afficherProchaineImage();
